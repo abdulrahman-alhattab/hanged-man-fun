@@ -1,0 +1,11 @@
+
+.dash {
+  margin: 8px;
+  text-align: center;
+  font-size: 50px;
+}
+.gamebackground {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
