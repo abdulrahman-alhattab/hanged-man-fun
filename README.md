@@ -13,6 +13,4 @@
 > 
 7.  hard coded the buttons to make them simpler
 > 
-8.  munther help with css, shadows,hover and color for buttons
-> 
-9.  js file looks like i used duct tape to fix all the problems but it works,"omar helped"
+
