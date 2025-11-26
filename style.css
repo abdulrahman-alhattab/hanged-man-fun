@@ -1,7 +1,9 @@
 body{
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQovlW8PsSrjFDsev-9JWLHZcutBv-xdBsVg&s);
-background-size: contain;
+background-size: cover ;
+
 background-position: center;
+
 }
 
 .dash {
@@ -62,8 +64,10 @@ background-position: center;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 2px;
-  ;
+  margin: 3px;
+
+
+
 }
 
 .btn:hover {
@@ -112,8 +116,11 @@ background-position: center;
 
 #picture {
 margin: 10px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   mask-image: -moz-linear-gradient(rgb(0, 0, 0));
    box-shadow: 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.478) 0 2px 4px,
     rgba(44, 187, 99, 0.603) 0 4px 8px, rgba(44, 187, 99, 0.475) 0 8px 16px,

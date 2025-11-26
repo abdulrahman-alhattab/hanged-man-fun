@@ -1,5 +1,84 @@
-const words = [ "apple","banana","cherry","date","elderberry","fig","grape","january","february","march","april","may","june","july","august","september","october","november","december",'steak','butter','good' , 'loop','branch','space','blueBerry' ,'home', 'key','motherboard','sponge','document','clock','food',"national", "eldenring",'indeed','expensive','indubitably','egregious','inevitable','flagrant','blatant','plant','poignant','outrageous','appalling','acrimonious','gregarious','ephemeral','obfuscate','ostentatious','frugal','facetious','hyperbole','capricious','ludicrous','disingenuous','arduous','garrulous','fastidious','fortuitous','meticulous','scrupulous','loquacious','conscientious','bumfuzzle','fartlek','hullaballoo','erf','obelus','sozzled','bumbershoot','cleek','whippersnapper','accubation','flabbergast','foppish','blubber','dollop','flummoxed'
-
+const words = [
+  'apple',
+  'banana',
+  'cherry',
+  'date',
+  'elderberry',
+  'fig',
+  'grape',
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+  'steak',
+  'butter',
+  'good',
+  'loop',
+  'branch',
+  'space',
+  'blueBerry',
+  'home',
+  'key',
+  'motherboard',
+  'sponge',
+  'document',
+  'clock',
+  'food',
+  'national',
+  'eldenring',
+  'indeed',
+  'expensive',
+  'indubitably',
+  'egregious',
+  'inevitable',
+  'flagrant',
+  'blatant',
+  'plant',
+  'poignant',
+  'outrageous',
+  'appalling',
+  'acrimonious',
+  'gregarious',
+  'ephemeral',
+  'obfuscate',
+  'ostentatious',
+  'frugal',
+  'facetious',
+  'hyperbole',
+  'capricious',
+  'ludicrous',
+  'disingenuous',
+  'arduous',
+  'garrulous',
+  'fastidious',
+  'fortuitous',
+  'meticulous',
+  'scrupulous',
+  'loquacious',
+  'conscientious',
+  'bumfuzzle',
+  'fartlek',
+  'hullaballoo',
+  'erf',
+  'obelus',
+  'sozzled',
+  'bumbershoot',
+  'cleek',
+  'whippersnapper',
+  'accubation',
+  'flabbergast',
+  'foppish',
+  'blubber',
+  'dollop',
+  'flummoxed',
 ]
 let life = 6
 
@@ -40,8 +119,10 @@ function keyboard(event) {
 
     console.log('updated empty word', splitEmptyWord)
   } else {
+    event.target.style.backgroundColor = 'grey'
+
     life = Number(life) - 1
-      displayEl.textContent = life
+    displayEl.textContent = life
 
     imageId++
     hangmanPictureElement.src = `./images/image${imageId}.jpg`
@@ -86,7 +167,6 @@ function checkWinCondition() {
   if (life === 0) {
     console.log('you lose')
     displayEl.textContent = `you lose! the word was ${selectedWORD}`
-
   }
 
   const isWinner = splitEmptyWord.every((letter) => letter !== '_')
@@ -113,6 +193,10 @@ function restart(event) {
   splitEmptyWord = selectedWORD.split('').map((c) => '_')
   imageId = 1
   hangmanPictureElement.src = './images/image1.png'
+
+  for (oneButton of BtnEl) {
+    oneButton.style.backgroundColor = '#c2fbd7'
+  }
   redrawLetters()
   resetButtons()
 }
