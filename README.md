@@ -12,5 +12,12 @@
 6. https://abdulrahman-alhattab.github.io/hanged-man-fun/
 > 
 7.  hard coded the buttons to make them simpler
-> 
+>
 
+<img width="1920" height="1021" alt="Screenshot 2025-11-26 110935" src="https://github.com/user-attachments/assets/3c86e6ef-18f5-4119-890e-70e5fb69a495" />
+
+<img width="1920" height="1021" alt="Screenshot 2025-11-26 110927" src="https://github.com/user-attachments/assets/275ade73-f8da-4c71-a624-83546b4e0b15" />
+
+<img width="1920" height="1021" alt="Screenshot 2025-11-26 110919" src="https://github.com/user-attachments/assets/dd66fba5-bc9d-44ea-949f-05c579284af2" />
+
+<img width="1920" height="1021" alt="Screenshot 2025-11-26 110900" src="https://github.com/user-attachments/assets/82f5a844-fc3a-4f08-a0aa-a7f87245e387" />
